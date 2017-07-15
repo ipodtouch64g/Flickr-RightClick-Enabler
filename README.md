@@ -1,1 +1,3 @@
-螞蜂窩終於可以閉嘴了 廠廠
+# Flickr RightClick Enabler
+> The simplest way to download a photo just by Right Click.
+
