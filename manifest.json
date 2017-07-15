@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+
+    "name": "Flickr RightClick Enabler",
+    "version": "0.0.1",
+    "description": "88 Flickr Protection.",
+    "icons": {
+        "48": "imgs/64.png",
+        "128": "imgs/128.png"
+    },
+    "browser_action": {
+        "default_icon": "imgs/64.png",     // 可選
+        "default_title": "Flickr RightClick Enabler" // 可選
+    },
+    "commands": {
+        "hello": {
+            "description": "hello"
+        }
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.flickr.com/photos/*"
+            ],
+            "all_frames": true,
+			"css": ["88.css"]
+        }
+    ],
+    "permissions": [
+          "tabs"
+        ]
+}
